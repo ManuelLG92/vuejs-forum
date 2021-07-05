@@ -23,7 +23,7 @@
               <span class="nav-link active">Contact</span>
             </li>
           </router-link>
-   
+
 
         </ul>
         <div>
@@ -90,7 +90,7 @@ export default {
   methods: {
     getTokenCookie: function () {
       this.cookies = document.cookie.split(';');
-      //  this.cookies = document.cookie.split('=');
+
     },
     setToken: function () {
 

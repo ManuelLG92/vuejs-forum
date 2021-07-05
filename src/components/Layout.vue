@@ -9,10 +9,13 @@
         <div class="col-md-2">
           <Sections />
           <slot name="newPost">
-            <div class="text-center mt-4">
+            <div v-if="isAuth" class="text-center mt-4">
               <router-link :to="{name : 'NewPost'}">
                 <p class="btn btn-new-post fw-bold w-100">Create Post  </p>
               </router-link>
+            </div>
+            <div v-else>
+              <span></span>
             </div>
           </slot>
 
@@ -36,11 +39,37 @@ import Sections from "./partials/Sections";
 
 export default {
   name: "Layout",
+  data: () => {
+    return {
+      isAuth: false,
+
+    }
+
+  },
   components: {
     Navbar,
     Footer,
     Sections,
 
+  },
+  mounted() {
+    try {
+      this.isAuth = this.getCookie('token').trim()
+      this.token.length > 30 ? this.isAuth = true : this.isAuth = false
+    }catch (error) {
+      this.token = ''
+
+    }
+  },
+  methods: {
+    getCookie: function (cookieName) {
+      let cookie = {};
+      document.cookie.split(';').forEach(function (el) {
+        let [key, value] = el.split('=');
+        cookie[key.trim()] = value;
+      })
+      return cookie[cookieName];
+    }
   }
 }
 </script>
