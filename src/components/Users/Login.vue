@@ -76,7 +76,6 @@ export default {
               document.cookie = 'token='+token
               document.cookie = 'userid='+user.id
               document.cookie = 'username='+user.name
-              // this.$router.push('/user/'+user.id);
               this.$router.push({ name: 'user-profile', params: { user: user.id } })
 
             }

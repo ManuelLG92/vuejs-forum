@@ -10,7 +10,8 @@
           <Sections/>
         </div>
         <div class="col-md-10">
-          <p>content</p>
+          <h1 class="text-center">About us</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias aspernatur autem culpa cupiditate deleniti, deserunt dolor, doloremque dolorum eaque fugit harum in incidunt itaque iure maiores minus quam quasi quis sapiente. Accusamus accusantium error fuga neque quae quia saepe sint veritatis! Accusantium amet aperiam aspernatur, consequuntur, corporis eos error impedit inventore ipsam laborum minima molestias nam optio placeat quae, quaerat saepe tempora tenetur velit voluptate. Accusantium ad asperiores dolorem doloribus, earum eveniet laudantium, nostrum officiis optio quis quo repudiandae unde ut veniam voluptatum? Alias debitis, iusto molestias natus nesciunt quas quidem quo soluta suscipit, vitae voluptas voluptate voluptatem voluptatum.</p>
         </div>
       </div>
     </div>

@@ -17,7 +17,6 @@
           </slot>
 
 
-
         </div>
         <div class="col-md-10">
           <slot name="content">

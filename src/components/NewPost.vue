@@ -72,7 +72,7 @@ export default {
       sectionFetchError: false,
       show: true,
       error : false,
-      errorMessage: "Ha habido un error creando el post",
+      errorMessage: "There has been a mistake creating your post.",
       send: false,
 
     }

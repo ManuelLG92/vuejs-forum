@@ -28,7 +28,7 @@
                              :to="{ name: 'post', params: { post: post.id } }"
                              title="Click to look this post">
                   <span ># {{ post.id }}</span>
-<!--                # {{ post.id }}-->
+
                 </router-link>
               </div>
               <div class="col text-center">{{ post.title }}</div>
