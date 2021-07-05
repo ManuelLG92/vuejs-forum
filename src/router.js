@@ -7,6 +7,7 @@ import NewPost from "./components/NewPost";
 import Register from "./components/Users/Registration";
 import Login from "./components/Users/Login";
 import Profile from "./components/Users/Profile";
+import Contact from "./components/Contact";
 
 const routes = [
     {
@@ -22,6 +23,11 @@ const routes = [
         path: "/about",
         name: "about",
         component: About,
+    },
+    {
+        path: "/contact",
+        name: "contact",
+        component: Contact,
     },
     {
         path: "/posts-by-section/:section",

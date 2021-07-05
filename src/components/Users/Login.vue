@@ -5,6 +5,7 @@
         <div v-if="error">
           <h3 class="text-danger">{{errorMessage}}</h3>
         </div>
+        <h1 class="text-center">Login</h1>
           <div class="mb-3">
             <label for="email" class="form-label">Email address <span class="text-danger">*</span></label>
             <input v-model="email" type="email" class="form-control" id="email" name="email">

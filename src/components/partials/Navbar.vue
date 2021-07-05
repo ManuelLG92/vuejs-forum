@@ -18,9 +18,12 @@
             </li>
           </router-link>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
+          <router-link class="text-decoration-none" to="/contact">
+            <li class="nav-item">
+              <span class="nav-link active">Contact</span>
+            </li>
+          </router-link>
+   
 
         </ul>
         <div>
@@ -91,9 +94,17 @@ export default {
     },
     setToken: function () {
 
-      this.token = this.getCookie('token').trim()
-      this.userName = this.getCookie('username').trim()
-      this.userId = this.getCookie('userid').trim()
+      try {
+        this.token = this.getCookie('token').trim()
+        this.userName = this.getCookie('username').trim()
+        this.userId = this.getCookie('userid').trim()
+      }catch (error) {
+        this.token = ''
+        this.userName =''
+        this.userId =''
+      }
+
+
       this.token.length > 30 ? this.isAuth = true : this.isAuth = false
 
     },
